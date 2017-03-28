@@ -4,19 +4,31 @@ Great starter set for people who want local image upload feature with keystone j
 
 It will serve well until the new stable keystone js version comes out.
 
+
+
+
 ### install guide
-```sh
-npm install --save keystone@next
-npm update --save
-npm install --save underscore
-npm start
-```
+just download it, run ```node keystone``` . 
+you can add package.json file and run ```npm start``` as well. 
+I added node_modules since users don't have to download tinymce plugins in node_modules. 
+It's simple this way.
 
 you are good to go!
 
 
 ### things that's different from keystone startet set.
 I had to do some research to make local image upload feature in tinymce editor in admin panel work.
+
+**In summary,**
+```sh
+npm uninstall --save keystone
+npm install --save keystone@next
+npm update --save
+npm install --save underscore
+added plugins in node_modules tinymce folder.
+added uploadimage feature in keystone.js file.
+npm start
+```
 
 I added upload-image tinymce plugin in plugin folder,
 
